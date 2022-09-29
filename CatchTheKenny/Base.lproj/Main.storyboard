@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatchTheKenny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDU-11-jey">
+                                <rect key="frame" x="122" y="44" width="147" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="TVa-bD-bu4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZR-hX-4lG">
+                                <rect key="frame" x="152" y="145" width="86" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="UlD-z4-zl5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Highscore:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J8-rP-wAK">
+                                <rect key="frame" x="124" y="692" width="143" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="rfJ-sn-0CO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KDU-11-jey" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3zq-Vj-Msy"/>
+                            <constraint firstItem="KDU-11-jey" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4pQ-n2-swI"/>
+                            <constraint firstItem="CZR-hX-4lG" firstAttribute="top" secondItem="KDU-11-jey" secondAttribute="bottom" constant="12" id="Jzy-mE-YcA"/>
+                            <constraint firstItem="KDU-11-jey" firstAttribute="centerX" secondItem="CZR-hX-4lG" secondAttribute="centerX" id="KkY-BQ-Aho"/>
+                            <constraint firstItem="KDU-11-jey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="LzB-fM-z4f"/>
+                            <constraint firstItem="CZR-hX-4lG" firstAttribute="centerX" secondItem="7J8-rP-wAK" secondAttribute="centerX" id="b5c-7F-k5c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7J8-rP-wAK" secondAttribute="bottom" constant="67" id="hZx-CK-a5A"/>
+                            <constraint firstItem="CZR-hX-4lG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="wCG-Am-w7D"/>
+                            <constraint firstItem="7J8-rP-wAK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="yXT-gg-2Sq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="7J8-rP-wAK" id="PeR-qd-7wQ"/>
+                        <outlet property="scoreLabel" destination="CZR-hX-4lG" id="K0P-fT-4Qn"/>
+                        <outlet property="timerLabel" destination="KDU-11-jey" id="FEQ-FZ-Sgz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.23076923076923" y="54.739336492890992"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
