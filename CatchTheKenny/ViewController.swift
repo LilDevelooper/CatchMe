@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var highscoreLabel: UILabel!
-
+    
+    //Variables
     var flag = true
     var timer = Timer()
     var timer2 = Timer()
